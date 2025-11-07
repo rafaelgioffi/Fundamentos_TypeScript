@@ -7,6 +7,11 @@ class Personagem {
         this.nome = nome;
         this.tipo = tipo;
     }
+    caminhar(movimento) {
+        console.log(`O(a) ${this.tipo} ${this.nome} caminhou ${movimento.passos} passos para ${movimento.direcao}.`);
+    }
 }
 let gandalf = new Personagem("Gandalf", "Mago");
-console.log(gandalf);
+let legolas = new Personagem("Legolas", "Elfo");
+gandalf.caminhar({ direcao: "cima", passos: 5 });
+legolas.caminhar({ direcao: "baixo", passos: 4 });
