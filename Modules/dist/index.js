@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const mago_1 = require("./personagens/mago");
+const elfo_1 = require("./personagens/elfo");
+let p1 = new mago_1.Mago("Gandalf");
+let p2 = new elfo_1.Elfo("Legolas");
+p1.statusVida();
+p1.caminhar();
+p1.atacar();
+p1.regenerar();
+p1.statusVida();
+p2.statusVida();
+p2.atacar();
+p2.curar();
+p2.statusVida();

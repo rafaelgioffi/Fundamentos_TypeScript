@@ -3,7 +3,7 @@ enum TipoPersonagem {
     Mago = 'Mago',
     Arqueiro = 'Arqueiro',
     Elfo = 'Elfo'
-}    
+}
 
 abstract class Personagem {
     nome: string;
